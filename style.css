@@ -1,5 +1,109 @@
 body,
 html {
+  image-rendering: pixelated;
   margin: 0px;
   padding: 0px;
+}
+
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  z-index: -1;
+}
+
+.popup-content {
+  padding: 12px;
+  border: solid 2px #181818;
+  border-image: url("data/ants.gif") 1 repeat;
+}
+
+.popup-title-box {
+  transform: translate(-50%) rotate(-5deg);
+  z-index: 1;
+  width: 30%;
+  position: relative;
+  left: 50%;
+  text-align: center;
+  outline: 2px solid #181818;
+  font-size: 24px;
+  background-color: white;
+}
+
+.popup-button {
+  transform: translate(-50%, 0) rotate(3deg);
+  position: relative;
+  z-index: 1;
+  width: 30%;
+  left: 50%;
+  text-align: center;
+  font-size: 24px;
+  background-color: #181818;
+  color: white;
+}
+
+.popup-button a {
+  all: unset;
+  cursor: crosshair;
+  position: relative;
+}
+
+.popup-button:hover {
+  animation: pulse 0.7s steps(1, end) infinite;
+}
+
+p {
+  margin: 0px;
+}
+
+p+p {
+  margin-top: 16px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: skew(-3deg) translate(-50%, 0px) scaleX(1) scaleY(1.05);
+  }
+
+  10% {
+    transform: skew(0deg) translate(-50%, 5px) scaleX(1.07) scaleY(1);
+  }
+
+  20% {
+    transform: skew(3deg) translate(-50%, -5px) scaleX(0.93) scaleY(0.95);
+  }
+
+  30% {
+    transform: skew(-3deg) translate(-50%, 0px) scaleX(1) scaleY(1.05);
+  }
+
+  40% {
+    transform: skew(-3deg) translate(-50%, 0px) scaleX(1) scaleY(1.05);
+  }
+
+  50% {
+    transform: skew(-3deg) translate(-50%, 0px) scaleX(1) scaleY(1.05);
+  }
+
+  60% {
+    transform: skew(-3deg) translate(-50%, 0px) scaleX(1) scaleY(1.05);
+  }
+
+  70% {
+    transform: skew(-3deg) translate(-50%, 0px) scaleX(1) scaleY(1.05);
+  }
+
+  80% {
+    transform: skew(-3deg) translate(-50%, 0px) scaleX(1) scaleY(1.05);
+  }
+
+  90% {
+    transform: skew(-3deg) translate(-50%, 0px) scaleX(1) scaleY(1.05);
+  }
+
+  100% {
+    transform: skew(-3deg) translate(-50%, 0px) scaleX(1) scaleY(1.05);
+  }
 }
