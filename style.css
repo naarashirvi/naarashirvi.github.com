@@ -5,12 +5,65 @@ html {
   padding: 0px;
 }
 
+.driver {
+  width: 50%;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  height: 80%;
+  background-color: white;
+  outline: 2px dashed #181818;
+}
+
+.page {
+  margin: 12px;
+  width: 70%;
+  left: 20%;
+  position: absolute;
+}
+
+.nav {
+  position: absolute;
+  z-index: 10010;
+  left: 0%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+
+.navball {
+  position: absolute;
+  z-index: 99999;
+}
+
+.nav_button {
+  position: absolute;
+  top: 90%;
+  z-index: 10009;
+  background-color: white;
+  width: 50px;
+  height: 100px;
+  outline: 2px solid #181818;
+  transform: translateX(50%) translateY(-65px) scaleY(0);
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+  border-radius: 0 0 25px 25px;
+  padding-top: 15px;
+}
+
+.nav:hover .nav_button {
+  transform: translateX(50%) translateY(0) scaleY(1);
+}
+
 .popup {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 35%;
+  width: 30%;
   z-index: -1;
 }
 
