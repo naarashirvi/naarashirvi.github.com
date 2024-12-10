@@ -52,6 +52,7 @@ html {
   transition-timing-function: ease-out;
   border-radius: 0 0 25px 25px;
   padding-top: 15px;
+  text-align: center;
 }
 
 .nav:hover .nav_button {
