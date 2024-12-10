@@ -20,8 +20,9 @@ html {
 .page {
   margin: 12px;
   width: 70%;
-  left: 20%;
+  right: 10%;
   position: absolute;
+  height: 90%;
 }
 
 .nav {
@@ -30,8 +31,8 @@ html {
   left: 0%;
   top: 0%;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 .navball {
@@ -41,13 +42,14 @@ html {
 
 .nav_button {
   position: absolute;
-  top: 90%;
+  top: 30px;
+  left: 50%;
   z-index: 10009;
   background-color: white;
-  width: 50px;
-  height: 100px;
+  width: 46px;
+  height: 600px;
   outline: 2px solid #181818;
-  transform: translateX(50%) translateY(-65px) scaleY(0);
+  transform: translateX(-50%) translateY(-315px) scaleY(0);
   transition: 0.2s;
   transition-timing-function: ease-out;
   border-radius: 0 0 25px 25px;
@@ -56,7 +58,7 @@ html {
 }
 
 .nav:hover .nav_button {
-  transform: translateX(50%) translateY(0) scaleY(1);
+  transform: translateX(-50%) translateY(0) scaleY(1);
 }
 
 .popup {
